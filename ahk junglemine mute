@@ -1,0 +1,187 @@
+;=====================================================================================================================
+
+!C::
+State3 := !State3
+
+If State3
+{
+    CustomColor3 = EEAA99
+
+    Gui, New
+    Gui +LastFound +ToolWindow +Caption +AlwaysOnTop
+    Gui, Color, black
+    Gui, Font, s9 b cWhite
+
+    Gui, Add, Text,, ㅤ
+    Gui, Add, Text,,       alt+1                   2.1 Флуд в чате (3 раза)
+    Gui, Add, Text,,       alt+2                   2.2 Флуд символами(13+)
+    Gui, Add, Text,,       alt+3                   2.3 Орг.флуда
+    Gui, Add, Text,,       alt+4                   2.4 Капс
+    Gui, Add, Text,,       alt+5                   2.5 Выпрашивание апелляция
+    Gui, Add, Text,,       alt+6                   2.6 Угроза администрации
+    Gui, Add, Text,,       alt+7                   2.7 Аморал
+    Gui, Add, Text,,       alt+8                   2.8 Публич.оск
+    Gui, Add, Text,,       alt+9                   2.9 Оскорб.родных
+    Gui, Add, Text,,       alt+0                   2.10 Упоминание серверов
+    Gui, Add, Text,,       alt+a                   2.11 Введение в заблуждение участников КП.
+    Gui, Add, Text,,       alt+b                   2.12 Публичная негативная критика проекта
+    Gui, Add, Text,,       alt+k                   2.13 Политическая агитация во внутриигровом чате.
+    Gui, Add, Text,,       alt+d                   2.14 Реклама канала(без разр)
+    Gui, Add, Text,,       alt+e                   2.15 Рофлы в сторону(администрации)
+    Gui, Add, Text,,       alt+f                   2.16 Оскорбление медиа
+    Gui, Add, Text,,       alt+g                   2.17 Расизм, нацизм
+    Gui, Add, Text,,       alt+h                   2.18 Оскорбление участников КП
+    Gui, Add, Text,,       Нечего                  Некк мут - казнь
+
+    WinSet, TransColor, %CustomColor3% 180
+    Gui, Show, x649 y194, JungleMine(by kair redakt Hopi)
+}
+Else
+{
+    Gui Destroy
+}
+
+ALT & 1::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 15m 2.1 -s
+SendInput, {Enter}
+return
+
+ALT & 2::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 15m 2.2 -s
+SendInput, {Enter}
+return
+
+ALT & 3::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 1h 2.3 -s
+SendInput, {Enter}
+return
+
+ALT & 4::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 15m 2.4 -s
+SendInput, {Enter}
+return
+
+ALT & 5::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 2h 2.5 -s
+SendInput, {Enter}
+return
+
+ALT & 6::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 4h 2.6 -s
+SendInput, {Enter}
+return
+
+ALT & 7::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 30m 2.7 -s
+SendInput, {Enter}
+return
+
+ALT & 8::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 20m 2.8 -s
+SendInput, {Enter}
+return
+
+ALT & 9::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 12h 2.9 -s
+SendInput, {Enter}
+return
+
+ALT & 0::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 3h 2.10 -s
+SendInput, {Enter}
+return
+
+ALT & a::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 12h 2.11 -s
+SendInput, {Enter}
+return
+
+ALT & b::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 2h 2.12 -s
+SendInput, {Enter}
+return
+
+ALT & k::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 6h 2.13 -s
+SendInput, {Enter}
+return
+
+ALT & d::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 1d 2.14 -s
+SendInput, {Enter}
+return
+
+ALT & e::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 6h 2.15 -s
+SendInput, {Enter}
+return
+
+ALT & f::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 5h 2.16 -s
+SendInput, {Enter}
+return
+
+ALT & g::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 1d 2.17 -s
+SendInput, {Enter}
+return
+
+ALT & h::
+SetDefaultMouseSpeed, 0
+SendInput, {Ctrl down}a{Ctrl up}
+SendInput, {Ctrl down}c{Ctrl up}
+SendInput, /mute ^v 8h 2.18 -s
+SendInput, {Enter}
+return
+
